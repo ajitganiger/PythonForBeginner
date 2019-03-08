@@ -1,0 +1,40 @@
+def my_function(inputmessage):
+    print("This is my function!")
+    print("A Second String")
+    print(inputmessage)
+
+
+my_function("Ha ha ha")
+
+
+def print_something(name, age):
+    print("My name is " + name + " and my age is " + str(age))
+    print("My name is ", name, "and my age is ", age)
+
+
+print_something("Ajit", 27)
+
+
+def fun_with_default_value(name="Ajit", age="Unknown"):
+    print("My name is ", name, "and my age is ", age)
+
+
+fun_with_default_value()
+fun_with_default_value("Ajit")
+fun_with_default_value(age="30", name="Rocky")
+
+
+def print_people(*people):
+    for person in people:
+        print("This person is ", person)
+
+
+print_people("Ajit", "Akhil")
+
+
+def func_with_return(a, b):
+    sum = a + b
+    return sum
+
+
+print(func_with_return(3, 4))
