@@ -15,3 +15,14 @@ else:
 oldfile.seek(0)
 oldfile.write(json.dumps(data))
 oldfile.close()
+
+# post test
+import requests
+
+url = "https://www.googleapis.com/urlshortener/v1/url"
+payload = {"longUrl": "http://example.com"}
+headers = {"Content-type": "application/json"}
+r = requests.post(url, json=payload, headers=headers)
+print(r.text)
+print(json.loads(r.text)["error"]["code"])
+print(json.loads(r.text)["error"]["errors"][0]["message"])
