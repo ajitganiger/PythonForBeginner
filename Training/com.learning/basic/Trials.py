@@ -3,7 +3,7 @@ __author__ = 'aganiger'
 import os
 
 print(os.path.expanduser('~'))
-# print(os.path.isfile("C:\\Users\\aganiger.ORADEV\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe"))
+# print(os.path.isfile("D_DRIVEAppData\\Local\\Programs\\Python\\Python36-32\\python.exe"))
 
 
 # validate Email address

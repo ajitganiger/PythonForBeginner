@@ -3,7 +3,7 @@ __author__ = 'aganiger'
 import pandas as pd
 
 
-data = pd.read_csv("C:\\Users\\aganiger.ORADEV\\Downloads\\ml-100k\\u.user", sep="|",
+data = pd.read_csv("D_DRIVEDownloads\\ml-100k\\u.user", sep="|",
                    names=["User_Id", "Age", "Gender", "Occupation", "Zip_code"])
 # print(data.to_string(index=False))  # displays without indexes
 
